@@ -6,7 +6,8 @@ import MainPage from "./pages/Main";
 export function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<MainPage />} />
+      <Route path="/home" element={<MainPage />} />
+      <Route path="*" element={<MainPage />} />
     </Routes>
   );
 }
