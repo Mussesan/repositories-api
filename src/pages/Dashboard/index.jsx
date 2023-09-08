@@ -1,8 +1,11 @@
 import React from "react"
 
+import { Title } from "./styles"
+
 const Dashboard = () => {
     (
-        <>teste</>
+        <Title>Olá mundo</Title>
+
     )
 }
 

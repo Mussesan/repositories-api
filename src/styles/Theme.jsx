@@ -14,6 +14,7 @@ export const theme = {
   colors: {
     white: "#FFFFFF",
     black: "#0C0D0F",
+    container: "#2d2d2d",
     red: "#E03131",
     orange: "#E8590C",
     yellow: "#FCC419",
@@ -33,8 +34,8 @@ export const theme = {
     gray700: "#424449",
     gray800: "#1D1E21",
     gray900: "#141518",
-    primary: "#F83600",
-    secondary: "#FE8C00",
+    danger: "#F83600",
+    alert: "#FE8C00",
   },
   fontFamily: {
     heading: ["IBM Plex Sans", "sans-serif"].join(","),
@@ -53,6 +54,14 @@ export const theme = {
     "4xl": rem(40),
     "5xl": rem(64),
   },
+  breakpoints: {
+    xs: '0',
+    sm: '576px',
+    md: '768px',
+    lg: '992px',
+    xl: '1200px',
+    xxl : '1400px'
+  }
 };
 
 export function Theme({ children }) {

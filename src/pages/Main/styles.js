@@ -69,6 +69,9 @@ export const TitleRepos = styled.h1`
   font-size: 1.3rem;
   color: ${(props) => props.theme.colors.text};
   margin-top: -1rem;
-  font-weight: normal;
-  
+  font-weight: normal;  
+`
+
+export const spanIconsSocial = styled.span`
+  background-color: red;
 `
