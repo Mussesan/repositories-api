@@ -13,7 +13,7 @@ export default function MainPage() {
     <Container>
       <Logo src={githublogo} alt="GitHub Logo" />
       <Title>API GitHub</Title>
-      <TitleRepos>Repositorios</TitleRepos>
+      <TitleRepos>Users</TitleRepos>
       <Form >
         <Input placeholder="Nome do usuário" value={login} onChange={(event)=> setLogin(event.target.value)} />
         <Button to={`${login.toLowerCase()}/repositories`}>

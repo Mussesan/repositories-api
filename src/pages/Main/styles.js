@@ -14,11 +14,27 @@ export const Container = styled.div`
 
 export const Logo = styled.img`
   width: 130px;
+  border-radius: 100px;
+  background: radial-gradient(ellipse at top, rgba(168, 52, 236, 0.83), transparent),
+              radial-gradient(ellipse at bottom, rgba(64, 6, 255, 0.72), transparent);
+  box-shadow: rgba(206, 143, 255, 0.52) 1px 0px 40px 8px;
+
+  @media screen and (max-width: 1300px) {
+    margin-top: -4rem;
+  }
+  
+  
 `
 
 export const Title = styled.h1`
-  font-size: 2.2rem;
-  color: ${(props) => props.theme.colors.text}
+  font-size: 3.2rem;
+  font-family: ${(props)=> props.theme.fontFamily.quantic};  
+  color: ${(props) => props.theme.colors.text};
+
+  @media screen and (max-width: 1300px) {
+    font-size: 1.2rem;
+    margin-top: 3rem;
+  }
 `
 
 export const Form = styled.div`
@@ -52,6 +68,11 @@ export const Button = styled(Link)`
 
   border-top-right-radius: 3rem;
   border-bottom-right-radius: 3rem;
+  border: 3px solid #252525;
+  &:hover{
+   background: radial-gradient(ellipse at top, rgba(97, 87, 103, 0.42), transparent),
+              radial-gradient(ellipse at bottom, rgb(31, 50, 105), transparent);
+  };
 
   background: transparent;
   width: 80px;
@@ -70,6 +91,7 @@ export const TitleRepos = styled.h1`
   color: ${(props) => props.theme.colors.text};
   margin-top: -1rem;
   font-weight: normal;  
+  margin-bottom: 4rem;
 `
 
 export const spanIconsSocial = styled.span`

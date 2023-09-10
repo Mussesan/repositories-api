@@ -30,12 +30,14 @@ export const Avatar = styled.img`
 `;
 
 export const Login = styled.h1`
+    font-family: ${(props) => props.theme.fontFamily.serif};
     font-size: ${(props)=> props.theme.fontSize.xxl};
     margin: 0px;
     
 `;
 
 export const Name = styled.h2`
+    font-family: ${(props) => props.theme.fontFamily.heading};
     font-size: ${(props)=> props.theme.fontSize.lg};
     font-weight: normal;
     margin: 0px;
@@ -58,9 +60,14 @@ export const Data = styled.p`
     display: flex;
     align-items: center;
     font-size: .8rem;
+    margin: 1px;
+    height: 1.3rem;
 
-    svg{
-        margin-right: 2rem;
+    & svg{
+        margin-left: 8px;
+        margin-right: 8px;
+        color: rgba(255, 255, 255, 0.9);
+        font-size: 1rem;
     }
 `
 

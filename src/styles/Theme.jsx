@@ -1,5 +1,7 @@
+
 import PropTypes from "prop-types";
 import React from "react";
+
 
 import { ThemeProvider } from "styled-components";
 
@@ -9,6 +11,8 @@ const round = (num) =>
     .replace(/(\.[0-9]+?)0+$/, "$1")
     .replace(/\.0$/, "");
 const rem = (px) => `${round(px / 16)}rem`;
+
+
 
 export const theme = {
   colors: {
@@ -41,6 +45,9 @@ export const theme = {
     heading: ["IBM Plex Sans", "sans-serif"].join(","),
     sans: ["Open Sans", "Arial", "Helvetica", "sans-serif"].join(","),
     mono: ["IBM Plex Mono", "serif"].join(","),
+    petch: ["Chakra Petch", "sans-serif"].join(","),
+    quantic: ["Quantico", "sans-serif"].join(",")
+
   },
   fontSize: {
     xs: rem(10),
