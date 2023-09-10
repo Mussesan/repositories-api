@@ -59,15 +59,26 @@ export const Inner = styled.div`
 export const Data = styled.p`
     display: flex;
     align-items: center;
+    text-align: center;
     font-size: .8rem;
     margin: 1px;
     height: 1.3rem;
 
-    & svg{
+    & p > svg{
         margin-left: 8px;
         margin-right: 8px;
         color: rgba(255, 255, 255, 0.9);
         font-size: 1rem;
-    }
+    };
+
+    & a:visited {
+        color: rgba(195,0,195,0.7);
+
+
+    };
+
+    & a:link{
+        color: rgba(0,195,195,0.8);
+    };
 `
 

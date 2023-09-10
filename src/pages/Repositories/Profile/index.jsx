@@ -19,17 +19,22 @@ export default function Profile(){
             <Inner>
                 <Data>
                     <p><MdGroup /></p>
-                    30 seguidores 10 seguindo</Data>
+                    30 seguidores 10 seguindo
+                </Data>
                 <Data>
                     <p><MdWork /></p>
-                    Leaf Systems</Data>
+                    Leaf Systems
+                </Data>
                 <Data>
                     <p><MdLocationOn /></p>
-                    Uberlândia MG</Data>
-                <Data><p><MdOutlineLink /></p>
+                    Uberlândia MG
+                </Data>
+                <Data>
+                    <p><MdOutlineLink /></p>
                     <a href="https://mussesan.github.io/mussesan-web/"
                         target="_blank" rel="noreferrer"
-                    >mussesan.github.io/mussesan-web/</a>
+                        >mussesan.github.io/mussesan-web/
+                    </a>
                 </Data>
             </Inner>
         </Container>
