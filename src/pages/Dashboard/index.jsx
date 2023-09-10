@@ -1,12 +1,24 @@
-import React from "react"
+import React from "react";
+import Profile from "./Profile";
+import Filter from './Filter'
 
-import { Title } from "./styles"
+import { Container, Sidebar, Main} from './styles'
 
-const Dashboard = () => {
-    (
-        <Title>Olá mundo</Title>
+
+
+export default function Dashboard(){
+    return(
+
+        <Container>
+            <Sidebar>
+                <Profile />
+                <Filter />
+            </Sidebar>
+
+            <Main>Main</Main>
+        </Container>
 
     )
 }
 
-export default Dashboard
+

@@ -16,7 +16,7 @@ export default function MainPage() {
       <TitleRepos>Users</TitleRepos>
       <Form >
         <Input placeholder="Nome do usuário" value={login} onChange={(event)=> setLogin(event.target.value)} />
-        <Button to={`${login.toLowerCase()}/repositories`}>
+        <Button to={`${login.toLowerCase()}/dashboard`}>
           <MdSearch size={36}/>
         </Button>
       </Form>

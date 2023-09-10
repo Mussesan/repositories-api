@@ -45,9 +45,9 @@ export const theme = {
     heading: ["IBM Plex Sans", "sans-serif"].join(","),
     sans: ["Open Sans", "Arial", "Helvetica", "sans-serif"].join(","),
     mono: ["IBM Plex Mono", "serif"].join(","),
-    petch: ["Chakra Petch", "sans-serif"].join(","),
-    quantic: ["Quantico", "sans-serif"].join(",")
-
+    chakra: ["Chakra Petch", "sans-serif"].join(","),
+    quantic: ["Quantico", "sans-serif"].join(","),
+    play: ["Play", "sans-serif"].join(","),
   },
   fontSize: {
     xs: rem(10),

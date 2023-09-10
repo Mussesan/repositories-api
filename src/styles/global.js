@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: ${(props) => props.theme.colors.gray900};
     color: ${(props) => props.theme.colors.gray600};
-    font-family: ${(props) => props.theme.fontFamily.quantic};
+    font-family: ${(props) => props.theme.fontFamily.play};
     padding: 0px;
   }
 
