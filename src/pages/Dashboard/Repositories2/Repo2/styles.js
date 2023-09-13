@@ -34,10 +34,10 @@ export const Footer = styled.footer`
 export const Lang = styled.span`
     color: inherit;
 `
+
 export const Link = styled.a`
     color: inherit;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
-
 `

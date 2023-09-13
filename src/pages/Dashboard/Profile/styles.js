@@ -1,7 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-
+    @media screen and (max-width: ${(props)=> props.theme.breakpoints.md}){
+            padding: 0px 20px;
+    } 
 `;
 
 export const Header = styled.div`

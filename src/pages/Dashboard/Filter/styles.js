@@ -7,9 +7,7 @@ export const ListLang = styled.ul`
 
     @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
         grid-template-columns: auto auto;
-    }
-    
-    
+    }    
 `
 
 export const ItemList = styled.button`
@@ -73,7 +71,6 @@ export const ClearButton = styled.button`
     :hover {
         cursor: pointer;
         background-color: rgba(255,255,255,0.7);
-
         color: ${(props)=> props.theme.colors.black };
         box-shadow:  rgba(255,255,255,0.2) 0px 5px 10px 1px;
     }
