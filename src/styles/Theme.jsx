@@ -23,6 +23,7 @@ export const theme = {
     orange: "#E8590C",
     yellow: "#FCC419",
     green: "#23DB42",
+    champagneDark: "#C2B280",
     teal: "#89DD13",
     cyan: "#3BC9DB",
     blue: "#25BEFF",

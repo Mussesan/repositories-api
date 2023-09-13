@@ -14,7 +14,6 @@ export default function Filter(){
         {name: 'Ruby', count: 2, color: '#950C10'},
         {name: 'C#', count: 4, color: '#853688'},
         {name: 'PHP', count: 3, color: '#7B7FB5'},
-        
     ]
 
     return(

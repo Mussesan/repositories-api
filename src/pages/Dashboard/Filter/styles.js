@@ -2,7 +2,12 @@ import styled from "styled-components";
 
 export const ListLang = styled.ul`
     padding: 0;
+    display: grid;
+    grid-template-columns: auto;
 
+    @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
+        grid-template-columns: auto auto;
+    }
     
     
 `
@@ -23,26 +28,36 @@ export const ItemList = styled.button`
     list-style: none;
     display: flex;
     justify-content: space-between;
-    transition: ease-out all 300ms, transform 0.3s ;
+    transition: ease-out all 300ms, transform 0.3s;
     
-
-    @media screen and (max-width: ${(props)=> props.theme.breakpoints.md}) {
-        display: none
-    }
-
     &:hover, &.selected {
         cursor: pointer;
         box-shadow: ${(props) => props.color} 0px 0px 18px -1px;
         transition: ease-out all 400ms ;
-        width: 16.5rem;
-        padding-left: 32px;
-        background-color: ${(props)=> props.theme.colors.gray800};
-        
+        padding-left: 40px;
+        width: 17.5rem;
+        /* Novo */
+        background-color: ${(props)=> props.color};    
+        color: black;
+        font-weight: bold;
+        /* Novo */
     }    
+
+    @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
+        border-radius: 20px;
+        width: 12rem;
+        text-align: center;
+        &:hover{
+            width: 12rem;
+            padding-left: 52px;
+            transition: ease-out all 400ms ;            
+        }
+    }
 `
 export const ClearButton = styled.button`
     background: transparent;
     border: none;
+    position: absolute;
     color: ${(props)=> props.theme.colors.white };
     background-color: rgba(255,255,255,0.05);
 
@@ -50,7 +65,6 @@ export const ClearButton = styled.button`
     border-bottom-right-radius: 10px;
     margin-left: 16px;
     margin-top: -16px;
-    padding: 16px 16px 0px;
     font-weight: bold;
     
     text-align: center;

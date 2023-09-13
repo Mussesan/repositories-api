@@ -19,8 +19,9 @@ export const Logo = styled.img`
               radial-gradient(ellipse at bottom, rgba(64, 6, 255, 0.72), transparent);
   box-shadow: rgba(206, 143, 255, 0.52) 1px 0px 40px 8px;
 
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1200) {
     margin-top: -4rem;
+    
   }
   
   

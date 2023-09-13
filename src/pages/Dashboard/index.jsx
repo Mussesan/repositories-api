@@ -1,6 +1,7 @@
 import React from "react";
 import Profile from "./Profile";
 import Filter from './Filter'
+import Repositories2 from "./Repositories2";
 
 import { Container, Sidebar, Main} from './styles'
 
@@ -15,7 +16,9 @@ export default function Dashboard(){
                 <Filter />
             </Sidebar>
 
-            <Main>Main</Main>
+            <Main>
+                <Repositories2 />
+            </Main>
         </Container>
 
     )
