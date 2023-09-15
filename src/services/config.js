@@ -12,4 +12,4 @@ export const langColors = {
     'c++': '#7f8c8d',
     php: '#7B7FB5',
     go: '#72aed8'
-}
+};

@@ -1,17 +1,23 @@
 import React from "react"; 
 import PropTypes from 'prop-types'
+
 import {ItemList, ListLang, ClearButton} from "./styles";
 
-export default function Filter({ langColors }){
+export default function Filter({ langsOfRepos }){
+
+    const seletores =  langsOfRepos.map(({name, count, color}) =>(
+        
+        <ItemList key={name} color={color}> 
+            <span>{name}</span>
+            <span>{count}</span>
+            
+        </ItemList> 
+    ));
 
     return(
     <section>
         <ListLang>
-            {langColors.map((item)=>
-                 <ItemList color={item.color} key={item.name}
-                    > {item.name} 
-                        <span>{item.count}</span>
-                </ItemList> )}
+           {seletores}
         </ListLang>
         <ClearButton>Limpar</ClearButton>
 
@@ -20,7 +26,7 @@ export default function Filter({ langColors }){
 }
 
 Filter.propTypes = {
-    langColors: PropTypes.arrayOf(
+    langsOfRepos: PropTypes.arrayOf(
         PropTypes.shape({
             name: PropTypes.string.isRequired,
             count: PropTypes.number.isRequired,
