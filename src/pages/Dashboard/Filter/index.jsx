@@ -10,7 +10,6 @@ export default function Filter({ langsOfRepos }){
         <ItemList key={name} color={color}> 
             <span>{name}</span>
             <span>{count}</span>
-            
         </ItemList> 
     ));
 

@@ -13,9 +13,9 @@ export default function Dashboard(){
         login: "Mussesan",
         name: "Gustavo Musse",
         avatar_url: "https://avatars.githubusercontent.com/u/87155946?v=4",
-        followers: 0,
-        following: 0,
-        company: 'Leaf Systems',
+        followers: 23,
+        following: 42,
+        company: 'GM Tech Service',
         blog: 'https://mussesan.github.io/mussesan-web/',
         location: 'Uberlândia - MG',
     };
@@ -26,7 +26,7 @@ export default function Dashboard(){
             name: 'Repo teste 1',
             description: 'Descrição do projetos aqui...',
             url_repo: 'https://github.com/mussesan/api-github',
-            langs: 'React'
+            langs: ['React','Next','TailwindCSS']
         },
         {
             name: 'Repo teste 2',
