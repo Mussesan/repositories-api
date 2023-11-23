@@ -12,7 +12,7 @@ export default function Dashboard(){
     const user = {
         login: "Mussesan",
         name: "Gustavo Musse",
-        avatar_url: "https://avatars.githubusercontent.com/u/87155946?v=4",
+        avatar_url: "https://avatars.githubusercontent.com/u/8 7155946?v=4", //apagar espaço
         followers: 23,
         following: 42,
         company: 'GM Tech Service',
